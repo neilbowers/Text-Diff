@@ -7,7 +7,7 @@ use Carp            qw/ croak confess /;
 use Exporter        ();
 use Algorithm::Diff ();
 
-our $VERSION = '1.42';
+our $VERSION = '1.41_01';
 our @ISA     = qw/ Exporter /;
 our @EXPORT  = qw/ diff /;
 
