@@ -627,7 +627,7 @@ differing elements by selectively escaping whitespace:
   * 9|embedded ws               |embedded\tws              *
   +--+--------------------------+--------------------------+
 
-See L</Text::Diff::Table> for more details, including how the whitespace
+See L<Text::Diff::Table> for more details, including how the whitespace
 escaping works.
 
 =head2 Text::Diff::Context
