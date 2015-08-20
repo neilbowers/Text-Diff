@@ -1,8 +1,9 @@
 Revision history for Perl module Text::Diff
 
-1.42 2015-07-?? NEILB
+1.42 2015-08-20 NEILB
     - Fixed pod link that was referring to the wrong place.
       Thanks to KENTNL for RT#106150.
+    - First non-developer released of the changes listed against 1.41_01.
 
 1.41_01 2015-06-02 NEILB
     - Developer release with changes I submitted for my January PRC assignment.

@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Text::Diff::Config;
 
-our $VERSION   = '1.41_01';
+our $VERSION   = '1.42';
 our @ISA       = qw( Text::Diff::Base Exporter );
 our @EXPORT_OK = qw( expand_tabs );
 
