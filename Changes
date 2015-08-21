@@ -1,5 +1,9 @@
 Revision history for Perl module Text::Diff
 
+1.43 2015-08-21 NEILB
+    - Got rid of the "Redundant argument in sprintf" warnings from
+      Text:Diff::Table on Perl 5.021+. RT#100505 and RT#106602.
+
 1.42 2015-08-20 NEILB
     - Fixed pod link that was referring to the wrong place.
       Thanks to KENTNL for RT#106150.

@@ -6,7 +6,7 @@ use warnings;
 use Carp;
 use Text::Diff::Config;
 
-our $VERSION   = '1.42';
+our $VERSION   = '1.43';
 our @ISA       = qw( Text::Diff::Base Exporter );
 our @EXPORT_OK = qw( expand_tabs );
 
@@ -291,12 +291,23 @@ sub file_footer {
             "*" => "* %$w[0]s|%-$w[1]s  |%-$w[2]s  *\n",
         );
 
-    $fmts{bar} = sprintf $fmts{"="}, "", "", "", "";
+    my @args = ('', '', '');
+    push(@args, '') if $four_column_mode;
+    $fmts{bar} = sprintf $fmts{"="}, @args;
     $fmts{bar} =~ s/\S/+/g;
     $fmts{bar} =~ s/ /-/g;
+
+    # Sometimes the sprintf has too many arguments,
+    # which results in a warning on Perl 5.021+
+    # I really wanted to write:
+    #   no warnings 'redundant';
+    # but that causes a compilation error on older versions of perl
+    # where the warnings pragma doesn't know about 'redundant'
+    no warnings;
+
     return join( "",
         map {
-            sprintf( $fmts{$_->[-1]}, @$_ )
+            sprintf( $fmts{$_->[-1]}, @$_ );
         } (
         ["bar"],
         @heading_lines,
