@@ -29,7 +29,10 @@ WriteMakefile(
         : ()
     ),
     META_MERGE =>
-      { resources => { repository => 'https://github.com/Ovid/Text-Diff' } },
+      { resources => {
+           repository => 'https://github.com/neilbowers/Text-Diff'
+        }
+      },
 
     ($mm_ver >= 6.48
         ? (MIN_PERL_VERSION => 5.006)

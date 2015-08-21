@@ -716,7 +716,7 @@ L<Data::Diff> - find difference between two arbitrary data structures.
 
 =head1 REPOSITORY
 
-L<https://github.com/Ovid/Text-Diff>
+L<https://github.com/neilbowers/Text-Diff>
 
 =head1 AUTHOR
 
