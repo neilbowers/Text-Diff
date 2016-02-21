@@ -1,5 +1,10 @@
 Revision history for Perl module Text::Diff
 
+    - Fixed the handling of text without a trailing newline. This module now
+      adds the same text that the diff tool does, "\n\\ No newline at end of
+      file\n". Previously this module simply produced broken diffs when one or
+      both files had no trailing newline. Fixed by Dave Rolsky. GitHub #1.
+
 1.43 2015-08-21 NEILB
     - Got rid of the "Redundant argument in sprintf" warnings from
       Text:Diff::Table on Perl 5.021+. RT#100505 and RT#106602.
