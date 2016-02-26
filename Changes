@@ -1,5 +1,6 @@
 Revision history for Perl module Text::Diff
 
+1.44 2016-02-26 NEILB
     - Fixed the handling of text without a trailing newline. This module now
       adds the same text that the diff tool does, "\n\\ No newline at end of
       file\n". Previously this module simply produced broken diffs when one or
