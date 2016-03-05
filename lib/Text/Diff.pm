@@ -433,7 +433,8 @@ following:
 
    require Text::Diff;
 
-That's a pretty rare occurence, so C<diff()> is exported by default.
+That's a pretty rare occurrence,
+so C<diff()> is exported by default.
 
 If you pass a filename, but the file can't be read,
 then C<diff()> will C<croak>.
