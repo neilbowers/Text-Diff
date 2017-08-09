@@ -563,7 +563,7 @@ Returns "" for all methods (other than C<new()>).
 
 =over
 
-=item file_header
+=item Text::Diff::Unified::file_header
 
   $s = Text::Diff::Unified->file_header( $options );
 
@@ -582,7 +582,7 @@ May also contain
 
 to override the default prefixes (default values shown).
 
-=item hunk_header
+=item Text::Diff::Unified::hunk_header
 
   Text::Diff::Unified->hunk_header( \@ops, $options );
 
