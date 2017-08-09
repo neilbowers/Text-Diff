@@ -474,7 +474,7 @@ overloading only; none of the formats provide them.
 Defaults to "Unified" (unlike standard C<diff>, but Unified is what's most
 often used in submitting patches and is the most human readable of the three.
 
-If the package indicated by the STYLE has no hunk() method, c<diff()> will
+If the package indicated by the STYLE has no hunk() method, C<diff()> will
 load it automatically (lazy loading).  Since all such packages should inherit
 from Text::Diff::Base, this should be marvy.
 
