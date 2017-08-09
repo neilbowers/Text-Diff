@@ -441,7 +441,7 @@ then C<diff()> will C<croak>.
 =head1 OPTIONS
 
 diff() takes two parameters from which to draw input and a set of
-options to control it's output.  The options are:
+options to control its output.  The options are:
 
 =over
 
@@ -453,7 +453,7 @@ These are filled in automatically for each file when diff() is passed a
 filename, unless a defined value is passed in.
 
 If a filename is not passed in and FILENAME_A and FILENAME_B are not provided
-or C<undef>, the header will not be printed.
+or are C<undef>, the header will not be printed.
 
 Unused on C<OldStyle> diffs.
 
@@ -514,7 +514,7 @@ These are passed to L<Algorithm::Diff/traverse_sequences>.
 =back
 
 B<Note>: if neither C<FILENAME_> option is defined, the header will not be
-printed.  If at one is present, the other and both MTIME_ options must be
+printed.  If at least one is present, the other and both MTIME_ options must be
 present or "Use of undefined variable" warnings will be generated (except
 on C<OldStyle> diffs, which ignores these options).
 
