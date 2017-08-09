@@ -586,7 +586,7 @@ to override the default prefixes (default values shown).
 
   Text::Diff::Unified->hunk_header( \@ops, $options );
 
-Returns a string containing the output of one hunk of unified diff.
+Returns a string containing the heading of one hunk of unified diff.
 
 =item Text::Diff::Unified::hunk
 
