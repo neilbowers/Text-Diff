@@ -71,7 +71,7 @@ sub diff {
             $seqs[$i] = [<$seq>];
         }
         else {
-            confess "Can't handle input of type ", ref;
+            confess "Can't handle input of type $type";
         }
     }
 
